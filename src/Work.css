@@ -1,5 +1,5 @@
 /* desktop */
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 768px) {
   .Work {
     background-color: #695356;
     position: absolute;
@@ -70,7 +70,7 @@
 }
 
 /* mobile */
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 600px) {
   .Work {
     background-color: #695356;
     position: absolute;
