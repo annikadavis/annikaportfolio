@@ -14,15 +14,24 @@ export default function About() {
         </div>
         <MobileIconsPink />
         <p>
-          Hi, I’m Annika. I’m a junior full stack web developer based in Berlin,
-          with a passion for art and technology. I believe in technology as a
-          tool for collaboration, self expression, democracy, and accessibility.
+          <b>Hi, I’m Annika!</b>
+          <br />
+          <br />
+          I’m a junior full stack web developer based in Berlin, with a passion
+          for art and technology. I believe in technology as a tool for
+          collaboration, self expression, democracy, and accessibility.
+          <br />
           <br />I hold a certificate in Full Stack Web Development from Wild
           Code School Berlin, and a Master’s Degree in Art History from the
-          University of British Columbia. I have over 7 years of experience
-          working in the creative field, and am proficient in HTML, CSS,
-          JavaScript, React, the Adobe Creative Suite, and Figma. On the back
-          end, I have experience with Express, Node.js, MySQL, and PostgreSQL.
+          University of British Columbia. <br />
+          <br />I have over 7 years of experience working in the creative field,
+          and am proficient in{" "}
+          <b>
+            HTML, CSS, JavaScript, React, the Adobe Creative Suite, and Figma.
+          </b>{" "}
+          On the back end, I have experience with{" "}
+          <b>Express, Node.js, MySQL, and PostgreSQL.</b>
+          <br />
           <br />I have lived and worked in several cities around the world,
           including New York City, Tokyo, Vancouver, and now Berlin. My native
           language is English, but I am also proficient in Japanese, and

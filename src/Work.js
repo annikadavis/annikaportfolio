@@ -122,11 +122,22 @@ export default function About() {
           theme was to create an app that would be useful for people in a
           previous era, so we created an app for ancient Greeks to find and
           contact gods and goddesses to make requests.
+          <br />
+          <br />
+          View the app{" "}
+          <Link
+            to={{ pathname: "http://talari-app.herokuapp.com/" }}
+            target="_blank"
+          >
+            here.
+          </Link>
         </p>
       </div>
+
       <div className="ImageSlider">
         <ImageSlider width="80%" data={imagesTalariapp} autoPlay={false} />
       </div>
+
       <div>
         <img src={wavy} className="wavy" alt="wavy lines" />
       </div>

@@ -13,9 +13,9 @@
   .About p {
     text-align: justify;
     margin-top: 20%;
-    font-size: 30px;
-    padding-left: 2%;
-    padding-right: 2%;
+    font-size: 28px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 2%;
     color: #fbc9be;
     background-color: #d66950;
@@ -40,7 +40,7 @@
     width: 500px;
     float: left;
     margin-right: 15px;
-    margin-left: 20px;
+    margin-left: 5%;
     margin-top: -150px;
   }
 }
