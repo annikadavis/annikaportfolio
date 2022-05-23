@@ -27,15 +27,11 @@ export default function About() {
           <br />I have over 7 years of experience working in the creative field,
           and am proficient in{" "}
           <b>
-            HTML, CSS, JavaScript, React, the Adobe Creative Suite, and Figma.
+            HTML, CSS, JavaScript, React, React Native, the Adobe Creative Suite, and Figma.
           </b>{" "}
-          On the back end, I have experience with{" "}
-          <b>Express, Node.js, MySQL, and PostgreSQL.</b>
-          <br />
           <br />I have lived and worked in several cities around the world,
           including New York City, Tokyo, Vancouver, and now Berlin. My native
-          language is English, but I am also proficient in Japanese, and
-          currently studying German.
+          language is English, but I am also proficient in Japanese.
           <br />
           Please{" "}
           <a

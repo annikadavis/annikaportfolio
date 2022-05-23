@@ -8,7 +8,7 @@ export default function Homepage() {
       <NavbarBlue />
       <MobileMenu />
       <div className="HomepageDesc">
-        Hi, I’m Annika. I’m a junior full stack web developer based in Berlin,
+        Hi, I’m Annika. I’m a junior front end web developer based in Berlin,
         and I love art and technology.
       </div>
     </div>
