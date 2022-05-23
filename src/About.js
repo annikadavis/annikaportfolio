@@ -35,7 +35,7 @@ export default function About() {
           <br />
           Please{" "}
           <a
-            href="https://drive.google.com/file/d/1mLaxH1553wOuCo0Rdks-YtBzAbdK4N1-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1d9grPfzcMTgpsYjdZiEpMH_KHyyvaw6P/view?usp=sharing"
             target="_blank"
           >
             download
