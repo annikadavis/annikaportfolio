@@ -29,7 +29,7 @@ export default function About() {
           <b>
             HTML, CSS, JavaScript, React, React Native, the Adobe Creative Suite, and Figma.
           </b>{" "}
-          <br />I have lived and worked in several cities around the world,
+          <br /> <br />I have lived and worked in several cities around the world,
           including New York City, Tokyo, Vancouver, and now Berlin. My native
           language is English, but I am also proficient in Japanese.
           <br />
