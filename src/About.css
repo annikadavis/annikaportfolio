@@ -1,0 +1,33 @@
+
+.About {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .About-sections {
+    border-top: 1px solid;
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 300px 400px;
+    font-family: 'Inter';
+  }
+  
+  .About-text {
+    margin-bottom: 20px;
+    width: 700px;
+  }
+  
+  .About-list {
+    list-style-type: none;
+  }
+  
+  .grid-item {
+    border-bottom: 1px solid;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+  }
+  

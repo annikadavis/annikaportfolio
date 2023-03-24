@@ -1,0 +1,68 @@
+.Work {
+    position: absolute;
+    top: 20%;
+    left: 58%;
+    transform: translate(-50%);
+}
+
+.Work-image {
+    height: 380px;
+    padding-right: 20px;
+}
+
+.Work-image-thumb {
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+.Work-image-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.Work-grid {
+    border-top: 1px solid;
+    display: grid;
+    grid-template-columns: 300px 500px auto;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+.AccordionRoot {
+    border-radius: 0px;
+    background-color: none;
+    box-shadow: none;
+  }
+
+.AccordionContent {
+    overflow: hidden;
+  }
+  
+.AccordionContent[data-state='open'] {
+    animation: slideDown 300ms ease-out;
+  }
+  
+.AccordionContent[data-state='closed'] {
+    animation: slideUp 300ms ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+

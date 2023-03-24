@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Syne:wght@600;700&display=swap');
+
+/* set app-wide styling */
+h1 {
+  font-family: 'Syne';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: 'Syne';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: 'Inter';
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  padding-left: 21.44px;
+}
+
+.Header-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Header-left {
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Header-social-logo-group {
+  height: 4.5vh;
+  display: flex;
+  flex-direction: row;
+  margin-right: 21.44px;
+  margin-top: 21.44px;
+}
+
+.Header-social-logo {
+  margin-left: 10px;
+}
+
+/* remove bullets from menu link list */
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+  margin-bottom: 20px;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* space between menu link items */
+li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
