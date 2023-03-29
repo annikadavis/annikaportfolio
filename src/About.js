@@ -8,11 +8,11 @@ function About() {
       </header>
       <p className="About-text">
         I'm Annika, and I'm specialized in art and development. On the tech
-        side, I have almost 3 years of experience in front end development
-        making websites and mobile apps. On the art side, I hold an MA in art
-        history, and have worked in galleries in New York, Tokyo, and Berlin.
-        Whether I'm coding or curating, I love to be creative and collaborate
-        with other creatives.
+        side, I have 3 years of experience in front end development making
+        websites and mobile apps. On the art side, I hold an MA in art history,
+        and have worked in galleries in New York, Tokyo, and Berlin. Whether I'm
+        coding or curating, I love to be creative and collaborate with other
+        creatives.
       </p>
       <div class="About-sections">
         <p className="About-title" class="grid-item">
@@ -38,6 +38,13 @@ function About() {
           <li>Curation</li>
           <li>Art writing</li>
           <li>Art acquisition consulting</li>
+        </ul>
+        <p className="About-title" class="grid-item">
+          Currently learning
+        </p>
+        <ul className="About-list" class="grid-item">
+          <li>Svelte</li>
+          <li>Readymag</li>
         </ul>
       </div>
     </div>

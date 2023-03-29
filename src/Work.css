@@ -1,35 +1,62 @@
 .Work {
     position: absolute;
-    top: 20%;
+    /* top: 20%;
     left: 58%;
-    transform: translate(-50%);
+    transform: translate(-50%); */
+    left: 25vw;
+    width: 60vw;
+    height: 100vh;
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+  }
+
+.Work::-webkit-scrollbar {
+    display: none;
 }
 
 .Work-image {
-    height: 380px;
-    padding-right: 20px;
-}
-
-.Work-image-thumb {
-    width: 200px;
-    padding-bottom: 30px;
+    width: 950px;
 }
 
 .Work-image-group {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    justify-content: center;
 }
 
 .Work-grid {
     border-top: 1px solid;
     display: grid;
-    grid-template-columns: 300px 500px auto;
+    grid-template-columns: 300px 350px auto;
     font-family: 'Inter';
-    text-align: center;
+    text-align: left;
 }
 
+.Headline-wrapper {
+  position: relative;
+}
+
+.Work-headline {
+  position: absolute;
+  display: inline-block;
+}
+
+.Marquee {
+  opacity: 0;
+}
+
+.Headline-wrapper:hover .Marquee {
+  opacity: 1;
+  margin: auto;
+}
+
+.Headline-wrapper:hover > .Work-headline {
+  opacity: 0;
+}
+
+/* Accordion */
 .AccordionRoot {
     border-radius: 0px;
     background-color: none;
@@ -66,3 +93,84 @@
     }
   }
 
+/* image carousel */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden
+  }
+  
+  .slider a.previousButton, .slider a.nextButton {
+    font-size: 22px;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 1;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden
+  }
+  
+  .slider a.previousButton:not(.disabled):hover, .slider a.nextButton:not(.disabled):hover {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .slider a.previousButton {
+    left: 20px;
+  }
+  
+  .slider a.nextButton {
+    right: 20px;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden
+  }
+  
+  .slide.hidden {
+    visibility: hidden;
+  }
+  
+  .slide.previous {
+    left: -100%;
+  }
+  
+  .slide.current {
+    left: 0;
+  }
+  
+  .slide.next {
+    left: 100%;
+  }
+  
+  .slide.animateIn,
+    .slide.animateOut {
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  
+  .slide.animateIn.previous,
+      .slide.animateIn.next {
+    left: 0;
+    visibility: visible;
+  }
+  
+  .slide.animateOut.previous {
+    left: 100%;
+  }
+  
+  .slide.animateOut.next {
+    left: -100%;
+  }
+
+  
