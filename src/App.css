@@ -1,7 +1,7 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Syne:wght@600;700&display=swap');
 
-/* set app-wide styling */
+/* set app-wide font styling */
 h1 {
   font-family: 'Syne';
 }
@@ -10,16 +10,25 @@ h2 {
   font-family: 'Syne';
 }
 
+h3 {
+  font-family: 'Syne';
+}
+
+h4 {
+  font-family: 'Syne';
+}
+
 p {
   font-family: 'Inter';
 }
 
+/* Header */
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 21.44px;
+  position: fixed;
 }
 
 .Header-top {
@@ -31,22 +40,26 @@ p {
 }
 
 .Header-left {
-  height: 82vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .Header-social-logo-group {
-  height: 4.5vh;
-  display: flex;
-  flex-direction: row;
-  margin-right: 21.44px;
-  margin-top: 21.44px;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  padding-right: 21.44px;
+
 }
 
 .Header-social-logo {
-  margin-left: 10px;
+  padding-left: 6px;
+  width: 30px;
+}
+
+.Header-customize {
+  bottom: 0;
 }
 
 /* remove bullets from menu link list */
@@ -63,4 +76,29 @@ p {
 li:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.Sidebar-link {
+  cursor: pointer;
+}
+
+/* Customizer*/
+.Customize-container {
+  border: 1px solid;
+  font-family: 'Inter';
+  bottom: 0;
+  position: fixed;
+  padding: 10px;
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+  width: 70px;
+}
+
+input {
+  border: none;
+  width: 70px;
+}
+
 
