@@ -41,18 +41,19 @@ function Work() {
   function WeddingSite() {
     return (
       <div class="Work-grid">
-        <h4>Annika + João</h4>
-        <h4>
-          <div className="Headline-wrapper">
-            <div className="Work-headline">
-              Custom platform, with João Cunha.
-            </div>
-            <Marquee gradient={false} play={false} className={"Marquee"}>
-              Custom platform, with João Cunha.
-            </Marquee>
+        <div className="Container-mobile">
+          <h4>Website: Annika + João</h4>
+          <h4 className="Date-mobile">2022</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Custom platform, with João Cunha.</h4>
           </div>
-        </h4>
-        <h4 style={{ textAlign: "right" }}>2022</h4>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Custom platform, with João Cunha.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2022</h4>
       </div>
     );
   }
@@ -60,18 +61,19 @@ function Work() {
   function TASite() {
     return (
       <div class="Work-grid">
-        <h4>Tomi-Ann Roberts</h4>
-        <h4>
-          <div className="Headline-wrapper">
-            <div className="Work-headline">
-              Design + development in Squarespace.
-            </div>
-            <Marquee gradient={false} play={false} className={"Marquee"}>
-              Design + development in Squarespace.
-            </Marquee>
+        <div className="Container-mobile">
+          <h4>Website: Tomi-Ann Roberts</h4>
+          <h4 className="Date-mobile">2023</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Design + development in Squarespace.</h4>
           </div>
-        </h4>
-        <h4 style={{ textAlign: "right" }}>2023</h4>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Design + development in Squarespace.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2023</h4>
       </div>
     );
   }
@@ -79,16 +81,19 @@ function Work() {
   function LexApp() {
     return (
       <div class="Work-grid">
-        <h4>Lex</h4>
-        <h4>
-          <div className="Headline-wrapper">
-            <div className="Work-headline">Custom platform, mobile app.</div>
-            <Marquee gradient={false} play={false} className={"Marquee"}>
-              Custom platform, mobile app.
-            </Marquee>
+        <div className="Container-mobile">
+          <h4>App: Lex</h4>
+          <h4 className="Date-mobile">2021-2022</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Custom platform, mobile app.</h4>
           </div>
-        </h4>
-        <h4 style={{ textAlign: "right" }}>2021-2022</h4>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Custom platform, mobile app.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2021-2022</h4>
       </div>
     );
   }
@@ -96,18 +101,19 @@ function Work() {
   function InuHealth() {
     return (
       <div class="Work-grid">
-        <h4>Inu Health</h4>
-        <h4>
-          <div className="Headline-wrapper">
-            <div className="Work-headline">
-              Custom platform, web and mobile app.
-            </div>
-            <Marquee gradient={false} play={false} className={"Marquee"}>
-              Custom platform, web and mobile app.
-            </Marquee>
+        <div className="Container-mobile">
+          <h4>App: Inu Health</h4>
+          <h4 className="Date-mobile">2021</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Custom platform, web and mobile app.</h4>
           </div>
-        </h4>
-        <h4 style={{ textAlign: "right" }}>2021</h4>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Custom platform, web and mobile app.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2021</h4>
       </div>
     );
   }
@@ -115,23 +121,104 @@ function Work() {
   function ArtScene() {
     return (
       <div class="Work-grid">
-        <h4>Art Scene</h4>
-        <h4>
-          <div className="Headline-wrapper">
-            <div className="Work-headline" style={{ width: "360px" }}>
-              Custom platform, design + development.
-            </div>
-            <Marquee
-              gradient={false}
-              play={false}
-              className={"Marquee"}
-              style={{ width: "360px" }}
-            >
-              Custom platform, design + development.
-            </Marquee>
+        <div className="Container-mobile">
+          <h4>Website: Art Scene</h4>
+          <h4 className="Date-mobile">2020</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline" style={{ width: "360px" }}>
+            <h4>Custom platform, design + development.</h4>
           </div>
-        </h4>
-        <h4 style={{ textAlign: "right" }}>2020</h4>
+          <Marquee
+            gradient={false}
+            play={false}
+            className={"Marquee"}
+            style={{ width: "360px" }}
+          >
+            <h4>Custom platform, design + development.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2020</h4>
+      </div>
+    );
+  }
+
+  function BirthofJakuchu() {
+    return (
+      <div class="Work-grid">
+        <div className="Container-mobile">
+          <h4>Exhibition: Birth of Jakuchu</h4>
+          <h4 className="Date-mobile">2020</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Art writing + translation from Japanese.</h4>
+          </div>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Art writing + translation from Japanese.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2020</h4>
+      </div>
+    );
+  }
+
+  function IllStarredPainters() {
+    return (
+      <div class="Work-grid">
+        <div className="Container-mobile">
+          <h4>Exhibition: Ill-Starred Painters</h4>
+          <h4 className="Date-mobile">2020-2021</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Art writing + translation from Japanese.</h4>
+          </div>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Art writing + translation from Japanese.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2020-2021</h4>
+      </div>
+    );
+  }
+
+  function AnimalsUnite() {
+    return (
+      <div class="Work-grid">
+        <div className="Container-mobile">
+          <h4>Exhibition: Animals Unite</h4>
+          <h4 className="Date-mobile">2020</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Art writing + translation from Japanese.</h4>
+          </div>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Art writing + translation from Japanese.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2020</h4>
+      </div>
+    );
+  }
+
+  function EmiBrener() {
+    return (
+      <div class="Work-grid">
+        <div className="Container-mobile">
+          <h4>Exhibition: Under The Skin</h4>
+          <h4 className="Date-mobile">2020</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Writing, marketing, curation assisting.</h4>
+          </div>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Writing, marketing, curation assisting.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">2020</h4>
       </div>
     );
   }
@@ -156,7 +243,11 @@ function Work() {
 
   return (
     <div className="Work">
-      <div style={{ paddingTop: "20vh", paddingBottom: "10vh" }}>
+      <div>
+        <div className="Work-intro">
+          <h2 style={{ textAlign: "center" }}>☺ WEB DEVELOPER + DESIGNER ☺</h2>
+          <h2 style={{ textAlign: "center" }}>✿ ART PROFESSIONAL ✿</h2>
+        </div>
         <Collapsible
           trigger={<TASite />}
           transitionTime="200"
@@ -210,7 +301,7 @@ function Work() {
             <img
               src={Lex}
               alt={"Lex mobile app screenshots"}
-              className="Work-image"
+              style={{ width: "60vw" }}
             />
           </div>
         </Collapsible>
@@ -247,6 +338,58 @@ function Work() {
               style={{ overflow: "auto" }}
             />
           </div>
+        </Collapsible>
+        <Collapsible
+          trigger={<EmiBrener />}
+          transitionTime="200"
+          style={{ overflow: "auto" }}
+        >
+          <p>
+            <a href="https://somos-arts.org/emi-brener-under-the-skin/">
+              Under The Skin
+            </a>{" "}
+            was an exhibition of mixed media oil paintings by multidisciplinary
+            Uruguayan artist Emi Brener, created and curated while she was a
+            resident at SomoS Art House in Berlin. I worked at SomoS in 2020,
+            and assisted with the curation, art writing, and marketing of the
+            exhibition.
+          </p>
+        </Collapsible>
+        <Collapsible
+          trigger={<IllStarredPainters />}
+          transitionTime="200"
+          style={{ overflow: "auto" }}
+        >
+          <p>
+            Ill-Starred Painters was an exhibiton of Japanese painters of the
+            Pre-Modern and Modern periods who overcame hardship to find success
+            as artists. It was exhibited jointly at the Fukuda Art Museum and
+            Saga Arashiyama Museum of Art and Culture in Kyoto. I wrote and
+            translated exhibition texts from Japanese.
+          </p>
+        </Collapsible>
+        <Collapsible
+          trigger={<BirthofJakuchu />}
+          transitionTime="200"
+          style={{ overflow: "auto" }}
+        >
+          <p>
+            Birth of Jakuchu: Beyond Conflict was an exhibiton of Japanese
+            painter Ito Jakuchu{"(1716-1800)"} at the Fukuda Art Museum in
+            Kyoto, Japan. I wrote and translated exhibition texts from Japanese.
+          </p>
+        </Collapsible>
+        <Collapsible
+          trigger={<AnimalsUnite />}
+          transitionTime="200"
+          style={{ overflow: "auto" }}
+        >
+          <p>
+            Animals Unite was an exhibition Saga Arashiyama Museum of Art and
+            Culture in Kyoto, presenting Japanese Edo-era paintings of the 12
+            amimals of the zodiac. I wrote and translated exhibition texts from
+            Japanese.
+          </p>
         </Collapsible>
         <div
           style={{

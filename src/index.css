@@ -1,5 +1,11 @@
 body {
-  margin: 0;
+  margin: 10px;
   font-family: 'Syne', 'Inter';
-  overflow: hidden;
+}
+
+@media (min-width: 993px) {
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
 }

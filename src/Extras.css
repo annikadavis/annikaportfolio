@@ -1,0 +1,16 @@
+.Extras-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid black;
+    margin-top: 21.44px;
+    margin-bottom: 21.44px;
+}
+
+.Extras-item {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

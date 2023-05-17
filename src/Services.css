@@ -1,0 +1,55 @@
+
+  .Services-sections {
+    border: none;
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 300px 400px;
+    font-family: 'Inter';
+  }
+  
+  .Services-text {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  ul.Services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .grid-item {
+    border: none;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  .Services-bullet {
+    height: 18px;
+    margin-right: 5px;
+  }
+
+  .Services-list-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .Services-headline-grid {
+    border-top: 1px solid;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Inter';
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .Headline-wrapper {
+    position: relative;
+  }
+  
+  .Services-headline {
+    text-align: right;
+  }
+ 
