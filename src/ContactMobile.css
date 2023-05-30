@@ -1,0 +1,12 @@
+.Contact-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Contact-mobile-container {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,9 +1,13 @@
 .Extras-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     border: 1px solid black;
     margin-top: 21.44px;
     margin-bottom: 21.44px;
+}
+
+.Extras-container div {
+    aspect-ratio: 1;
 }
 
 .Extras-item {
@@ -13,4 +17,10 @@
     align-items: center;
 }
 
+@media (max-width: 992px) {
+ .Extras-container {
+    margin-top: 140px;
+ }
+
+}
 

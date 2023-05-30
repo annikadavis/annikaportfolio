@@ -4,6 +4,7 @@ import About from "./About.js";
 import Work from "./Work.js";
 import Services from "./Services";
 import Extras from "./Extras";
+import ContactMobile from "./ContactMobile";
 import sakura from "./images/sakura.JPG";
 import sandDunes from "./images/sand-dunes.jpg";
 import tokyo from "./images/tokyo.JPG";
@@ -18,6 +19,8 @@ function App() {
   const [showServices, setShowServices] = useState(false);
   const [showCustomize, setShowCustomize] = useState(false);
   const [showExtras, setShowExtras] = useState(false);
+  const [showCustomizeMobile, setShowCustomizeMobile] = useState(false);
+  const [showContactMobile, setShowContactMobile] = useState(false);
   const [textColor, setTextColor] = useState("#000000");
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
   const [selectedBackground, setSelectedBackground] = useState("");
@@ -26,6 +29,7 @@ function App() {
     setShowWork(false);
     setShowServices(false);
     setShowExtras(false);
+    setShowContactMobile(false);
     setShowAbout(true);
   };
 
@@ -33,6 +37,7 @@ function App() {
     setShowAbout(false);
     setShowServices(false);
     setShowExtras(false);
+    setShowContactMobile(false);
     setShowWork(true);
   };
 
@@ -40,6 +45,7 @@ function App() {
     setShowAbout(false);
     setShowWork(false);
     setShowExtras(false);
+    setShowContactMobile(false);
     setShowServices(true);
   };
 
@@ -47,12 +53,29 @@ function App() {
     setShowAbout(false);
     setShowWork(false);
     setShowServices(false);
+    setShowContactMobile(false);
     setShowExtras(true);
+  };
+
+  const handleContactMobileClick = () => {
+    setShowAbout(false);
+    setShowWork(false);
+    setShowServices(false);
+    setShowExtras(false);
+    setShowContactMobile(true);
   };
 
   const handleCustomizeClick = () => {
     showCustomize ? setShowCustomize(false) : setShowCustomize(true);
   };
+
+  const handleCustomizeMobileClick = () => {
+    showCustomizeMobile
+      ? setShowCustomizeMobile(false)
+      : setShowCustomizeMobile(true);
+  };
+
+  document.body.style.backgroundColor = backgroundColor;
 
   function BackgroundPicker() {
     return (
@@ -86,25 +109,38 @@ function App() {
       }}
     >
       <header className="App-header">
+        <div
+          className="Header-container-mobile"
+          style={{ backgroundColor: backgroundColor }}
+        >
+          <div className="Header-top-mobile">
+            <title>Annika Davis da Cunha</title>
+            <h1 onClick={handleWorkClick}>ANNIKA DAVIS DA CUNHA</h1>
+          </div>
+          <div className="Nav-mobile">
+            <h3 onClick={handleAboutClick} className="Sidebar-link-mobile">
+              About
+            </h3>
+            <h3 onClick={handleServicesClick} className="Sidebar-link-mobile">
+              Services
+            </h3>
+            <h3 onClick={handleExtrasClick} className="Sidebar-link-mobile">
+              Extras
+            </h3>
+            <h3
+              onClick={handleContactMobileClick}
+              className="Sidebar-link-mobile"
+            >
+              Contact
+            </h3>
+          </div>
+        </div>
         <div className="Header-top">
+          <title>Annika Davis da Cunha</title>
           <h1 onClick={handleWorkClick} style={{ cursor: "pointer" }}>
             ANNIKA DAVIS <br />
             DA CUNHA
           </h1>
-        </div>
-        <div className="Header-top-mobile">
-          <h1 onClick={handleWorkClick}>ANNIKA DAVIS DA CUNHA</h1>
-        </div>
-        <div className="Nav-mobile">
-          <h3 onClick={handleAboutClick} className="Sidebar-link-mobile">
-            About
-          </h3>
-          <h3 onClick={handleServicesClick} className="Sidebar-link-mobile">
-            Services
-          </h3>
-          <h3 onClick={handleExtrasClick} className="Sidebar-link-mobile">
-            Extras
-          </h3>
         </div>
         <h3 onClick={handleAboutClick} className="Sidebar-link">
           About
@@ -124,8 +160,11 @@ function App() {
           transitionTime="200"
         >
           <div className="Social-links-group-dropdown">
-            <a href="mailto:hello@annikadavisdacunha.com">
-              hello@annikadavisdacunha.com
+            <a
+              href="mailto:hello@annikadavisdacunha.com"
+              className="About-link"
+            >
+              email
             </a>
             <br />
             <a
@@ -133,7 +172,7 @@ function App() {
               target="_blank"
               className="About-link"
             >
-              Github
+              github
             </a>
             <br />
             <a
@@ -141,7 +180,7 @@ function App() {
               target="_blank"
               className="About-link"
             >
-              Instagram
+              instagram
             </a>
             <br />
             <a
@@ -149,14 +188,14 @@ function App() {
               target="_blank"
               className="About-link"
             >
-              Linkedin
+              linkedin
             </a>
           </div>
         </Collapsible>
         {!showCustomize && (
           <div className="Header-customize">
             <button onClick={handleCustomizeClick} className="Customize-button">
-              Customize
+              customize
             </button>
             <img src={sparkle} className="Customizer-button-sparkle" />
           </div>
@@ -176,8 +215,7 @@ function App() {
                   x
                 </p>
               </div>
-
-              <p>.Text {"{"} </p>
+              <p>text {"{"} </p>
               <label>color: </label>
               <input
                 name="newTextColor"
@@ -185,7 +223,7 @@ function App() {
                 onChange={(e) => setTextColor(e.target.value)}
               ></input>
               <p>{"}"}</p>
-              <p>.Body {"{"} </p>
+              <p>body {"{"} </p>
               <label>background-color: </label>
               <input
                 value={backgroundColor}
@@ -199,6 +237,47 @@ function App() {
           </div>
         )}
       </header>
+      <div>
+        {showCustomizeMobile && (
+          <div className="Customize-mobile">
+            <form className="Customize-form">
+              <p style={{ marginBottom: "10px" }}>
+                hint: try typing a color name, or using a{" "}
+                <a href="https://www.color-hex.com/" target={"_blank"}>
+                  hex code
+                </a>
+              </p>
+              <div style={{ marginLeft: "10px" }}>
+                <p>text {"{"} </p>
+                <label style={{ marginLeft: "10px" }}>color: </label>
+                <input
+                  name="newTextColor"
+                  value={textColor}
+                  onChange={(e) => setTextColor(e.target.value)}
+                ></input>
+                <p>{"}"}</p>
+                <p>body {"{"} </p>
+                <p>
+                  <label style={{ marginLeft: "10px" }}>
+                    background-color:{" "}
+                  </label>
+                  <input
+                    value={backgroundColor}
+                    onChange={(e) => setBackgroundColor(e.target.value)}
+                  ></input>
+                </p>
+                <p>{"}"}</p>
+              </div>
+              <p
+                className="Customizer-done"
+                onClick={handleCustomizeMobileClick}
+              >
+                DONE
+              </p>
+            </form>
+          </div>
+        )}
+      </div>
       <div className="App-content">
         <div className={showAbout ? "Show-div" : "Hide-div"}>
           {showAbout && <About />}
@@ -212,6 +291,15 @@ function App() {
         <div className={showExtras ? "Show-div" : "Hide-div"}>
           {showExtras && <Extras />}
         </div>
+        <div className={showContactMobile ? "Show-div" : "Hide-div"}>
+          {showContactMobile && <ContactMobile />}
+        </div>
+        <button
+          onClick={handleCustomizeMobileClick}
+          className="Customize-button-mobile"
+        >
+          Customize
+        </button>
       </div>
     </div>
   );

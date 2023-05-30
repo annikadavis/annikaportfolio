@@ -5,11 +5,14 @@ function About() {
   return (
     <div className="About">
       <div className="About-intro">
-        <img src={annika} style={{ height: "75vh" }} />
-
+        <img src={annika} className="About-photo" />
         <header className="About-header">
-          <h1 style={{ fontSize: "2.5vw" }}>ART + TECH</h1>
           <p className="About-text">
+            Located in: Porto, Portugal
+            <br />
+            Education: MA in Art History, certificate in front end web
+            development
+            <br /> <br />
             I'm Annika, and I'm specialized in art and development. On the tech
             side, I have 3 years of experience in front end development making
             websites and mobile apps. On the art side, I hold an MA in Art

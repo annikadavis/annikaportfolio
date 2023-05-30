@@ -30,8 +30,8 @@ function Services() {
 
   return (
     <div className="Services">
-      <div style={{ paddingTop: "20vh", paddingBottom: "10vh" }}>
-        <h2>What can I do for you?</h2>
+      <div>
+        <h2>WHAT CAN I DO FOR YOU?</h2>
         <p className="Services-text">
           I offer services as a developer, designer, and art professional. On
           the tech side I can help with a range of things, from helping you
@@ -51,75 +51,31 @@ function Services() {
           transitionTime="200"
           style={{ overflow: "auto" }}
         >
-          <div class="Services-sections">
-            <p className="Services-title" class="grid-item">
-              Skills
-            </p>
-            <p className="Services-info" class="grid-item">
-              I can design and code custom sites using JavaScript, CSS, HTML,
-              and React. I can also work with Squarespace, Webflow, and Shopify.
-            </p>
-            <p className="Services-title" class="grid-item">
-              Included
-            </p>
-            <ul className="Services-list" class="grid-item">
-              <li className="Services-list-item">Discovery and research</li>
-              <li className="Services-list-item">Custom design</li>
-              <li className="Services-list-item">Development</li>
-              <li className="Services-list-item">
-                Desktop and mobile-friendly
-              </li>
-              <li className="Services-list-item">At least 1 round of edits</li>
-              <li className="Services-list-item">Basic SEO</li>
-              <li className="Services-list-item">CMS training</li>
-              <li className="Services-list-item">
-                At least 1 month of maintenance
-              </li>
-            </ul>
-            <p className="Services-title" class="grid-item">
-              Extras
-            </p>
-            <ul className="Services-list" class="grid-item">
-              <li className="Services-list-item">
-                Content organization/curation
-              </li>
-              <li className="Services-list-item">Writing and editing</li>
-              <li className="Services-list-item">
-                Newsletter and social media templates
-              </li>
-              <li className="Services-list-item">Newsletter setup</li>
-              <li className="Services-list-item">Extended maintenance time</li>
-            </ul>
-          </div>
+          <p className="Services-info">
+            I first taught myself CSS and HTML as a teenager customizing my
+            MySpace and Tumblr pages, and have always enjoyed coding as a
+            creative medium. In 2020 I studied JavaScript, React, and React
+            Native, earning a certificate in front end development.
+            <br />I am currently freelance, and enjoy working with fellow
+            dreamers and creatives to make their ideas come to digital life.
+            Depending on the project, I can design and create custom sites using
+            JavaScript, CSS, HTML, and React, or platforms like Squarespace,
+            Webflow, and Shopify. I can also design and set up newsletters,
+            curate site content, and edit copy.
+          </p>
         </Collapsible>
         <Collapsible
           trigger={<ArtServices />}
           transitionTime="200"
           style={{ overflow: "auto" }}
         >
-          <div className="Services-sections">
-            <p className="About-title" class="grid-item">
-              Experience
-            </p>
-            <p className="About-title" class="grid-item">
-              I hold an MA in Art History with a focus in modern Japanese art,
-              and I've worked at museums, galleries, and artist residencies in
-              New York City, Kyoto, Tokyo, and Berlin.
-            </p>
-            <p className="About-title" class="grid-item">
-              Services
-            </p>
-            <ul className="Services-list" class="grid-item">
-              <li className="Services-list-item">Curation</li>
-              <li className="Services-list-item">
-                Consultation for art acquisition and curation
-              </li>
-              <li className="Services-list-item">
-                Translation - Japanese to English
-              </li>
-              <li className="Services-list-item">Art writing</li>
-            </ul>
-          </div>
+          <p className="About-title" class="grid-item">
+            I hold an MA in Art History with a focus in modern Japanese art, and
+            I've worked at museums, galleries, and artist residencies in New
+            York City, Kyoto, Tokyo, and Berlin. I can do curation, art writing,
+            Japanese to English translation, and provide consultation for art
+            acquisition and curation.
+          </p>
         </Collapsible>
         <div style={{ borderBottom: "1px solid" }} />
       </div>

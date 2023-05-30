@@ -1,7 +1,7 @@
 import "./Extras.css";
 import print from "./images/print.jpeg";
 import megalith from "./images/dolmen.jpg";
-import onchi from "./images/onchi.png";
+import sky from "./images/sky.jpg";
 
 function Extras() {
   return (
@@ -9,7 +9,7 @@ function Extras() {
       <div class="Extras-item">
         <iframe
           width="100%"
-          height="400"
+          height="100%"
           src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Flisteningtoshapes%2F"
           frameborder="0"
         ></iframe>
@@ -29,7 +29,7 @@ function Extras() {
         </h3>
       </div>
       <div class="Extras-item">
-        <img src={print} style={{ width: "100%" }} />
+        <img src={print} style={{ width: "100%", height: "100%" }} />
       </div>
       <div class="Extras-item">
         <img src={megalith} style={{ width: "100%" }} />
@@ -52,7 +52,7 @@ function Extras() {
         </h3>
       </div>
       <div class="Extras-item">
-        <img src={onchi} style={{ width: "100%" }} />
+        <img src={sky} style={{ width: "100%", height: "100%" }} />
       </div>
     </div>
   );

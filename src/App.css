@@ -1,25 +1,48 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Syne:wght@600;700&display=swap');
 
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('./fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('./fonts/Satoshi-Bold.woff') format('woff'),
+       url('./fonts/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('./fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('./fonts/Satoshi-Regular.woff') format('woff'),
+       url('./fonts/Satoshi-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
 /* set app-wide font styling */
 h1 {
-  font-family: 'Syne';
+  font-family: 'Satoshi-Regular';
 }
 
 h2 {
-  font-family: 'Syne';
+  font-family: 'Satoshi-Regular';
 }
 
 h3 {
-  font-family: 'Syne';
+  font-family: 'Satoshi-Regular';
 }
 
 h4 {
-  font-family: 'Syne';
+  font-family: 'Satoshi-Regular';
 }
 
 p {
-  font-family: 'Inter';
+  font-family: 'Satoshi-Regular';
+}
+
+.App {
+  min-height: 100vh;
 }
 
 /* fade components in and out */
@@ -40,7 +63,6 @@ p {
 .App {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
-  height: "100vh"
 }
 
 .App::-webkit-scrollbar {
@@ -93,31 +115,14 @@ p {
   justify-content: space-between;
 }
 
-.Social-links-group {
-  font-family: 'Inter';
-  font-size: 14px;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  padding-right: 21.44px;
-  padding-bottom: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.Social-links-group a{
-  font-size: 12px;
-}
-
 .Social-links-group-dropdown {
-  font-family: 'Inter';
   font-size: 14px;
   margin-left: 5px;
 }
 
-.About-link {
+.About-link a {
   width: 100%;
+  padding-top: 5px;
 }
 
 .About-link::after {
@@ -207,7 +212,6 @@ a:hover::after {
 .Customize-button {
   border: 1px solid black;
   background-color: white;
-  font-family: 'Syne';
 }
 
 .Customize-button:hover + .Customizer-button-sparkle{
@@ -279,11 +283,23 @@ select {
   display: none;
 }
 
+.Header-container-mobile {
+  display: none;
+}
+
 .Nav-mobile {
   display: none;
 }
 
 .Sidebar-link-mobile {
+  display: none;
+}
+
+.Customize-button-mobile {
+ display: none;
+}
+
+.Customize-mobile {
   display: none;
 }
 }
@@ -292,22 +308,35 @@ select {
 /* Mobile */
 
 @media (max-width: 992px) {
-  
+
+  .App {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .App-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .Header-top-mobile h1{
    margin-top: 0px;
    font-size: 1.58em;
-   text-align: center;
+   text-align: right;
   }
 
   .Header-top {
     display: none;
   }
+
+ .Header-container-mobile {
+  position: fixed;
+  min-width: 95%;
+  margin-top: -10px;
+  padding-top: 10px;
+  z-index: 20;
+ }
   
   .Header-left {
     display: flex;
@@ -334,8 +363,68 @@ select {
   }
 
   .Sidebar-link {
-    display: none !important;; 
+    display: none !important; 
   }
 
+  /* Customizer*/
+  .Customize-button-mobile {
+    border: 1px solid black;
+    background-color: white;
+    z-index: 40;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    bottom: 0;
+    position: fixed;
+  }
+  
+.Customize-mobile {
+  margin-top: 40vh;
+  padding: 10px;
+  display: flex;  
+  position: fixed;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: 2px solid black;
+  z-index: 60;
+}
+
+.Customize-form p{
+  margin: 0px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  width: 70px;
+  background: transparent;
+}
+
+input {
+  border: none;
+  width: 70px;
+  background: transparent;
+color: white;
+}
+
+select {
+  border-color: black;
+  outline: none;
+  background: transparent;
+}
+
+.Background-picker {
+  font-family: 'Inter';
+}
+
+.Customizer-done-container {
+  display: flex;  
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.Customizer-done {
+  text-align: center;
+}
   
 }

@@ -177,13 +177,21 @@
 .Date-mobile {
   display: none;
 }
+
+.Lex-app-screenshots {
+  width: 60vw;
+}
 }
   
 /* Mobile */
 @media (max-width: 992px) {
 
   .Work {
-    padding-top: 80px;
+    padding-top: 120px;
+  }
+
+  .Work-intro {
+    font-size: .85em;
   }
 
   .Container-mobile {
@@ -206,6 +214,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .Lex-app-screenshots {
+    width: 100vw;
   }
 
   .Headline-wrapper {

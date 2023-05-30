@@ -1,10 +1,11 @@
 
+
   .Services-sections {
     border: none;
     display: grid;
     margin: 0px;
-    grid-template-columns: 300px 400px;
-    font-family: 'Inter';
+    grid-template-columns: auto auto;
+    font-family: Satoshi-Regular;
   }
   
   .Services-text {
@@ -40,7 +41,7 @@
     border-top: 1px solid;
     display: grid;
     grid-template-columns: auto auto;
-    font-family: 'Inter';
+    font-family: Satoshi-Regular;
     text-align: left;
     cursor: pointer;
   }
@@ -52,4 +53,19 @@
   .Services-headline {
     text-align: right;
   }
- 
+
+  @media (min-width: 993px) {
+
+    .Services {
+        padding-top: 20vh ;
+        padding-bottom: 10vh;
+    }
+    }
+    
+  
+/* Mobile */
+@media (max-width: 992px) {
+    .Services {
+        padding-top: 120px;
+      }
+}

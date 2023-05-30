@@ -1,25 +1,25 @@
-import "./Work.css";
-import weddingTwo from "./images/wedding-two.png";
-import weddingThree from "./images/wedding-three.png";
-import weddingFour from "./images/wedding-four.png";
-import weddingFive from "./images/wedding-gif.gif";
-import weddingSix from "./images/wedding-six.gif";
-import inuOne from "./images/inu-collage.jpg";
-import inuTwo from "./images/inu-collage-2.jpg";
-import TATwo from "./images/ta-two.gif";
-import TAThree from "./images/ta-three.png";
-import TAFour from "./images/ta-four.png";
-import TAFive from "./images/ta-five.png";
-import TASix from "./images/ta-six.png";
-import TAOne from "./images/ta-one.png";
-import Lex from "./images/Lex.jpg";
+import Slider from "react-animated-slider";
+import Collapsible from "react-collapsible";
+import Marquee from "react-fast-marquee";
 import artSceneOne from "./images/artscene-1.png";
 import artSceneTwo from "./images/artscene-2.png";
 import artSceneThree from "./images/artscene-3.png";
 import artSceneFour from "./images/artscene-4.png";
-import Marquee from "react-fast-marquee";
-import Collapsible from "react-collapsible";
-import Slider from "react-animated-slider";
+import inuTwo from "./images/inu-collage-2.jpg";
+import inuOne from "./images/inu-collage.jpg";
+import Lex from "./images/Lex.jpg";
+import TAFive from "./images/ta-five.png";
+import TAFour from "./images/ta-four.png";
+import TAOne from "./images/ta-one.png";
+import TASix from "./images/ta-six.png";
+import TAThree from "./images/ta-three.png";
+import TATwo from "./images/ta-two.gif";
+import weddingFour from "./images/wedding-four.png";
+import weddingFive from "./images/wedding-gif.gif";
+import weddingSix from "./images/wedding-six.gif";
+import weddingThree from "./images/wedding-three.png";
+import weddingTwo from "./images/wedding-two.png";
+import "./Work.css";
 
 function Work() {
   const weddingImages = [
@@ -37,6 +37,26 @@ function Work() {
     artSceneThree,
     artSceneFour,
   ];
+
+  function ReEau() {
+    return (
+      <div class="Work-grid">
+        <div className="Container-mobile">
+          <h4>Website: Re-Eau</h4>
+          <h4 className="Date-mobile">current</h4>
+        </div>
+        <div className="Headline-wrapper">
+          <div className="Work-headline">
+            <h4>Design + development in Shopify.</h4>
+          </div>
+          <Marquee gradient={false} play={false} className={"Marquee"}>
+            <h4>Design + development in Shopify.</h4>
+          </Marquee>
+        </div>
+        <h4 className="Date-desktop">current</h4>
+      </div>
+    );
+  }
 
   function WeddingSite() {
     return (
@@ -249,6 +269,15 @@ function Work() {
           <h2 style={{ textAlign: "center" }}>✿ ART PROFESSIONAL ✿</h2>
         </div>
         <Collapsible
+          trigger={<ReEau />}
+          transitionTime="200"
+          style={{ overflow: "auto" }}
+        >
+          <p>
+            Custom e-commerce site done in Shopify. Currently in development.
+          </p>
+        </Collapsible>
+        <Collapsible
           trigger={<TASite />}
           transitionTime="200"
           style={{ overflow: "auto" }}
@@ -301,7 +330,7 @@ function Work() {
             <img
               src={Lex}
               alt={"Lex mobile app screenshots"}
-              style={{ width: "60vw" }}
+              className="Lex-app-screenshots"
             />
           </div>
         </Collapsible>
@@ -385,10 +414,10 @@ function Work() {
           style={{ overflow: "auto" }}
         >
           <p>
-            Animals Unite was an exhibition Saga Arashiyama Museum of Art and
-            Culture in Kyoto, presenting Japanese Edo-era paintings of the 12
-            amimals of the zodiac. I wrote and translated exhibition texts from
-            Japanese.
+            Animals Unite was an exhibition at the Saga Arashiyama Museum of Art
+            and Culture in Kyoto, presenting Japanese Edo-era paintings of the
+            12 amimals of the zodiac. I wrote and translated exhibition texts
+            from Japanese.
           </p>
         </Collapsible>
         <div

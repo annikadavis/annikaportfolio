@@ -12,12 +12,15 @@
   }
   
   .About-text {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .About-photo {
+    height: 75vh;
   }
 
   .About-intro {
     display: flex;
-
   }
   
   .About-list {
@@ -38,9 +41,20 @@
     padding-bottom: 20px;
     list-style-type: none;
   }
+
 }
 
 /* Mobile */
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
+  .About-photo {
+    width: 60vw;
+  }
 
+  .About-intro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 120px;
+  }
   }

@@ -1,6 +1,6 @@
 body {
-  margin: 10px;
-  font-family: 'Syne', 'Inter';
+  font-family: 'Satoshi-Regular';
+  margin: 0;
 }
 
 @media (min-width: 993px) {
@@ -8,4 +8,17 @@ body {
     margin: 0;
     overflow: hidden;
   }
+}
+
+@media (max-width: 992px) {
+  body a:link {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    body a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+
 }
